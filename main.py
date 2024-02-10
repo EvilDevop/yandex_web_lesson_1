@@ -44,11 +44,11 @@ def promotion_image():
                         <h1>Жди нас, Марс!</h1> <br>
                         <img src="{url_for('static', filename='img/MARS.png')}" 
                                alt="здесь должна была быть картинка, но не нашлась"> <br>
-                        <span class="highlighted-text">Человечество вырастает из детства.</span> <br>
-                        <span class="highlighted-text">Человечеству мала одна планета.</span> <br>
-                        <span class="highlighted-text">Мы сделаем обитаемыми безжизненные пока планеты.</span> <br>
-                        <span class="highlighted-text">И начнем с Марса!</span> <br>
-                        <span class="highlighted-text">Присоединяйся!</span> <br>
+                        <div class="p-3 mb-2 bg-secondary text-white">Человечество вырастает из детства.</div> <br>
+                        <div class="p-3 mb-2 bg-success text-white">Человечеству мала одна планета.</div> <br>
+                        <div class="p-3 mb-2 bg-secondary text-white">Мы сделаем обитаемыми безжизненные пока планеты.</div> <br>
+                        <div class="p-3 mb-2 bg-warning text-dark">И начнем с Марса!</div> <br>
+                        <div class="p-3 mb-2 bg-danger text-white">Присоединяйся!</div> <br>
                       </body>
                     </html>"""
 
