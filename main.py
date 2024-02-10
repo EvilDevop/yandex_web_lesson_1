@@ -78,10 +78,10 @@ def choice(planet_name):
                   </head>
                   <body>
                     <h1>Мое предложение: {planet_name}</h1> <br>
-                    <span class="highlighted-text">{planets[planet_name][0]}</span> <br>
-                    <span class="highlighted-text">{planets[planet_name][1]}</span> <br>
-                    <span class="highlighted-text">{planets[planet_name][2]}</span> <br>
-                    <span class="highlighted-text">{planets[planet_name][3]}</span> <br>
+                    <div class="p-3 mb-2 bg-success text-white"">{planets[planet_name][0]}</div>
+                    <div class="p-3 mb-2 bg-secondary text-white">{planets[planet_name][1]}</div>
+                    <div class="p-3 mb-2 bg-warning text-dark">{planets[planet_name][2]}</div>
+                    <div class="p-3 mb-2 bg-danger text-white">{planets[planet_name][3]}</div>
                   </body>
                 </html>"""
 
