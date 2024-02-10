@@ -43,7 +43,7 @@ def promotion_image():
                       <body>
                         <h1>Жди нас, Марс!</h1> <br>
                         <img src="{url_for('static', filename='img/MARS.png')}" 
-                               alt="здесь должна была быть картинка, но не нашлась">
+                               alt="здесь должна была быть картинка, но не нашлась"> <br>
                         <span class="highlighted-text">Человечество вырастает из детства.</span> <br>
                         <span class="highlighted-text">Человечеству мала одна планета.</span> <br>
                         <span class="highlighted-text">Мы сделаем обитаемыми безжизненные пока планеты.</span> <br>
