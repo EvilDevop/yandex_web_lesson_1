@@ -69,7 +69,7 @@ def astronaut_selection():
                                 integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
                                 crossorigin="anonymous">
                                 <link rel="stylesheet" type="text/css" href="{url_for('static', filename='css/style.css')}" />
-                                <title>Пример формы</title>
+                                <title>Отбор астронавтов</title>
                               </head>
                               <body>
                                 <h1 style="text-align:center">Анкета претендента</h1>
