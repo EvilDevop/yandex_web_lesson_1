@@ -56,13 +56,8 @@ def promotion_image():
                     </html>"""
 
 
-@app.route('/choice/<planet_name>')
-def choice(planet_name):
-    mercury = ['Эта планета близка к солнцу;', 'На ней можно быстро загареть;', ['Она не так далеко от Земли;'], ['Она небольшая.']]
-    venus = ['Она близка к Земле;', 'На ней тепло;', 'Она больше Земли;', 'Она красивая.']
-    mars = ['Она близка к Земле;', 'На ней много необходимых ресурсов;', 'На ней есть вода и атмосфера;', 'Она просто красивая.']
-    jupiter = ['Эта планета большая;', 'На ней можно накуриться газа;', 'Это самая большая планета солнечной системы;', 'Она недалеко от Земли.']
-    planets = {'Меркурий': mercury, 'Венера': venus, 'Марс': mars, 'Юпитер': jupiter}
+@app.route('/results/<nickname>/<int:level>/<float:rating>')
+def results(nickname, level, rating):
     return f"""<!doctype html>
                 <html lang="en">
                   <head>
@@ -74,14 +69,14 @@ def choice(planet_name):
                     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
                     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
                     crossorigin="anonymous">
-                    <title>Колонизация</title>
+                    <title>Результаты</title>
                   </head>
                   <body>
-                    <h1>Мое предложение: {planet_name}</h1> <br>
-                    <div class="p-3 mb-2 bg-success text-white"">{planets[planet_name][0]}</div>
-                    <div class="p-3 mb-2 bg-secondary text-white">{planets[planet_name][1]}</div>
-                    <div class="p-3 mb-2 bg-warning text-dark">{planets[planet_name][2]}</div>
-                    <div class="p-3 mb-2 bg-danger text-white">{planets[planet_name][3]}</div>
+                    <h1>Результаты отбора</h1> <br>
+                    <h2>Претендента на участие в миссии {nickname}</h2> <br>
+                    <div class="p-3 mb-2 bg-success text-white"">Поздравляем! Ваш рейтинг после {level} этапа отбора</div> <br>
+                    <p>составляет {rating}</p> <br>
+                    <div class="p-3 mb-2 bg-warning text-dark">Желаем удачи!</div>
                   </body>
                 </html>"""
 
